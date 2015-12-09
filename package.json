@@ -1,15 +1,15 @@
 {
-  "name": "dragrace",
+  "name": "drag-race",
   "version": "0.1.0",
-  "homepage": "https://github.com/joshfarrant/dragrace",
+  "homepage": "https://github.com/joshfarrant/drag-race",
   "description": "A simple JavaScript code execution speed test",
-  "main": "dist/dragrace.js",
+  "main": "dist/drag-race.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshfarrant/dragrace"
+    "url": "https://github.com/joshfarrant/drag-race"
   },
   "keywords": [
     "javascript",
@@ -22,14 +22,16 @@
   "author": "Josh Farrant <josh@farrant.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshfarrant/dragrace/issues"
+    "url": "https://github.com/joshfarrant/drag-race/issues"
   },
   "dependencies": {
     "better-console": "^0.2.4"
   },
   "devDependencies": {
     "babel": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
     "eslint-config-airbnb": "^2.0.0",
+    "eslint-plugin-react": "^3.11.3",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-nsp": "^2.1.0"

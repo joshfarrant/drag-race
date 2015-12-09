@@ -1,5 +1,8 @@
 {
   "extends": "airbnb",
+  "plugins": [
+    "react"
+  ],
   "env": {
     "es6": true,
     "node": true
