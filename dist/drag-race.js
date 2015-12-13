@@ -2,6 +2,11 @@
 
 var console = require('better-console');
 
+function clearLine() {
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+}
+
 // Basic bubble sort to sort results
 function bubbleSort(a) {
   var swapped = undefined;
@@ -41,9 +46,9 @@ function logResults(results) {
     sorted[i].time += 'ms';
   }
 
-  console.clear();
+  clearLine();
 
-  console.log(results.length + ' tests completed in ' + totalTime + 'ms');
+  process.stdout.write(results.length + ' tests completed in ' + totalTime + 'ms\n');
 
   console.table(sorted);
 }
@@ -51,9 +56,9 @@ function logResults(results) {
 function dragRace(tests) {
   var results = [];
 
-  console.clear();
+  clearLine();
 
-  console.log('Completed 0/' + tests.length + ' tests');
+  process.stdout.write('Completed 0/' + tests.length + ' tests');
 
   for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     args[_key - 1] = arguments[_key];
@@ -77,8 +82,8 @@ function dragRace(tests) {
       time: timeTaken
     });
 
-    console.clear();
-    console.log('Completed ' + (i + 1) + '/' + tests.length + ' tests');
+    clearLine();
+    process.stdout.write('Completed ' + (i + 1) + '/' + tests.length + ' tests');
   }
 
   logResults(results);
