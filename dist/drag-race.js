@@ -51,6 +51,8 @@ function logResults(results) {
   process.stdout.write(results.length + ' tests completed in ' + totalTime + 'ms\n');
 
   console.table(sorted);
+
+  return sorted;
 }
 
 function dragRace(tests) {
@@ -86,9 +88,7 @@ function dragRace(tests) {
     process.stdout.write('Completed ' + (i + 1) + '/' + tests.length + ' tests');
   }
 
-  logResults(results);
-
-  return results;
+  return logResults(results);
 }
 
 module.exports = dragRace;
