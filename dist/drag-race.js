@@ -96,7 +96,7 @@ function dragRace(tests) {
 
     // Format the hr time in a readable manner (converted to seconds)
     // process.hrtime() returns a tuple array as [seconds, nanoseconds]
-    var timeTaken = timeDiff[0] + timeDiff[1] / 1e9;
+    var timeTaken = timeDiff[0] + Math.floor(timeDiff[1] * 1e9) / 1e18;
 
     // Use the given test function's name as a lable if it exists
     // If not create a generic name
