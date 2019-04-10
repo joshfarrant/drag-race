@@ -18,28 +18,25 @@ To use Drag Race simply require it, define an array of functions to test, and ca
 The `dragRace()` function takes your array of functions as the first parameter, and any arguments to be passed to each function as further parameters.
 
 ```js
-dragRace(funcArray, arg1, arg2, arg3, etc...);
+dragRace(timesToRun, funcArray, arg1, arg2, arg3, etc...);
 ```
 
 ```js
-var dragRace = require('drag-race');
+const dragRace = require('drag-race');
 
 // Array of functions to test
-var functions = [
-
+const functions = [
   function myFunc1(arg1, arg2) {
     /*
       ...
     */
   },
-
   function myFunc2(arg1, arg2) {
     /*
       ...
     */
   }
-
 ];
 
-dragRace(functions, arg1, arg2);
+dragRace(timesToRun, functions, arg1, arg2);
 ```
