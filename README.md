@@ -15,7 +15,7 @@ npm install
 
 To use Drag Race simply require it, define an array of functions to test, and call the `dragRace()` function.
 
-The `dragRace()` function takes your array of functions as the first parameter, and any arguments to be passed to each function as further parameters.
+The `dragRace()` function takes the number of times to run the test as the first parameter, your array of functions as the second parameter, and any arguments to be passed to each function as further parameters.
 
 ```js
 dragRace(timesToRun, funcArray, arg1, arg2, arg3, etc...);
