@@ -1,6 +1,6 @@
 {
   "name": "drag-race",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/joshfarrant/drag-race",
   "description": "A simple JavaScript code execution speed test",
   "main": "lib/drag-race.js",
